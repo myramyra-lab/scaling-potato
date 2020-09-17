@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Pizza</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" name="Pizza" id="orderform">
+            <p>Please Select Size:</p>
+            <input type="radio" id="small" class="size" name="tab-active"value="500"> 
+            <label for="small">Small</label>
+            <input type="radio" id="medium" class="size"name="tab-active"value="700"> 
+            <label for="medium">Medium</label>
+            <input type="radio" id="large" class="size"name="tab-active" value="1000"> 
+            <label for="large">Large</label>
+            <br>
+            <p>Please Select Pizza Crust</p> 
+            <input type="radio" class="crust" name="tab"id="crispy">
+            <label for="crispy">Crispy</label>
+            <input type="radio" class="crust" name="tab" id="stuffed">
+            <label for="stuffed">Stuffed</label>
+            <input type="radio" class="crust" name="tab"id="gluten-free"> 
+            <label for="gluten-free">Gluten-free</label>
+            <br>
+            <p>Please select toppings:</p>
+            <input type="checkbox" class="toppings" name="top" id="cheese" value="">
+            <label for="cheese">Cheese</label>
+            <input type="checkbox" class="toppings" name="top"id="onions" value="">
+            <label for="onions">Onions</label>
+            <input type="checkbox" class="toppings" name="top"id="pineapples" value="">
+            <label for="pineapples">Pineapples</label>
+            <br>
+            <button type="submit" class="btn btn-success" id="button">Order Pizza</button>                            
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="Js/jquery-3.5.1.js"></script>
+    <script src="Js/scripts.js"></script>
+</body>
+</html>
